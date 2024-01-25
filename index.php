@@ -28,8 +28,8 @@ function get_location($ip) {
 }
 
 function send_telegram_message($message) {
-    $botToken = 'Token';
-    $chatId = 'id number';
+    $botToken = 'Token'; // توکن ربات را در این قسمت قرار بدید
+    $chatId = 'id number'; // ایدی عددی خود را در این قسمت قرار بدهید
     $url = "https://api.telegram.org/bot$botToken/sendMessage";
     $postData = ['chat_id' => $chatId, 'text' => $message];
     
